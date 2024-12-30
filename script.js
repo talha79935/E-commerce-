@@ -204,9 +204,6 @@ audio.autoplay = true;
 audio.volume = 0.1; // Set volume level
 document.body.appendChild(audio); // Append to body so it starts playing automatically
 
-
-
-
 // Toggle Dark/Light Theme Functionality
 const themeToggleButton = document.getElementById('theme-toggle');
 const body = document.body;
@@ -272,5 +269,3 @@ newsletterForm.addEventListener('submit', function(e) {
     newsletterMessage.style.color = 'red';
   }
 });
-
-
