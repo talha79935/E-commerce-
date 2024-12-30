@@ -3,143 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Extreme</title>
-  <!-- Link to external CSS file (relative path) -->
+  <title>Elite Market</title>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
+  <!-- Background Sound -->
+  <audio id="background-sound" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <h1>Shop Extreme</h1>
+    <div class="logo">
+      <h1>Elite Market</h1>
+    </div>
     <nav>
       <a href="#home">Home</a>
       <a href="#products">Products</a>
       <a href="#cart">Cart</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
+      <button id="theme-toggle">Toggle Theme</button>
     </nav>
   </header>
 
-  <!-- Search Bar -->
-  <section id="search-bar">
-    <input type="text" placeholder="Search for products..." id="search-input">
-  </section>
-
-  <!-- Home Section -->
+  <!-- Hero Section -->
   <section id="home">
-    <img src="https://via.placeholder.com/1200x400?text=Welcome+to+Shop+Extreme" alt="Hero Banner">
-    <h2>Your One-Stop Online Store!</h2>
-    <p>Exclusive deals and amazing products just for you!</p>
+    <img src="https://images.unsplash.com/photo-1541747343-7b75c1e62b4f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDJ8fGNvbW1lcmNlfGVufDB8fHx8fDE2ODk4MTY5NTM&ixlib=rb-1.2.1&q=80&w=1080" alt="Elite Market Banner">
+    <h2>Your Ultimate Luxury Shopping Destination</h2>
+    <p>Exclusive deals on high-end products, only at Elite Market.</p>
   </section>
 
   <!-- Products Section -->
   <section id="products">
-    <h2>Our Products</h2>
+    <h2>Our Premium Products</h2>
 
     <!-- Product 1 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Smartphone" alt="Smartphone">
-      <h3>Smartphone</h3>
-      <p>$599.00</p>
-      <p class="rating">★★★★☆</p>
+      <img src="https://images.unsplash.com/photo-1562013952-0df2ea03615b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDI1fHxjYXJyfGVufDB8fHx8fDE2ODk4MTcwNzE&ixlib=rb-1.2.1&q=80&w=1080" alt="Luxury Watch">
+      <h3>Luxury Watch</h3>
+      <p>$899.00</p>
+      <p class="rating">★★★★★</p>
       <button>Add to Cart</button>
     </div>
 
     <!-- Product 2 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Wireless+Headphones" alt="Wireless Headphones">
-      <h3>Wireless Headphones</h3>
-      <p>$199.00</p>
-      <p class="rating">★★★★★</p>
+      <img src="https://images.unsplash.com/photo-1594597110721-e5b347d95cc1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDI5fHxnb2xkZW58ZW58MHx8fHwxNjg5ODE3NzMw&ixlib=rb-1.2.1&q=80&w=1080" alt="Smartphone">
+      <h3>Smartphone</h3>
+      <p>$1,299.00</p>
+      <p class="rating">★★★★☆</p>
       <button>Add to Cart</button>
     </div>
 
     <!-- Product 3 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Gaming+Laptop" alt="Gaming Laptop">
-      <h3>Gaming Laptop</h3>
-      <p>$999.00</p>
-      <p class="rating">★★★☆☆</p>
+      <img src="https://images.unsplash.com/photo-1606359411242-257350a2f3c1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDk5fHxibHVldG9vdGglMjBzcGVha2VyfGVufDB8fHx8fDE2ODk4MTcwMjM&ixlib=rb-1.2.1&q=80&w=1080" alt="Bluetooth Speaker">
+      <h3>Bluetooth Speaker</h3>
+      <p>$249.00</p>
+      <p class="rating">★★★★☆</p>
       <button>Add to Cart</button>
     </div>
 
     <!-- Product 4 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Smartwatch" alt="Smartwatch">
-      <h3>Smartwatch</h3>
-      <p>$149.00</p>
-      <p class="rating">★★★★☆</p>
+      <img src="https://images.unsplash.com/photo-1562549656-3a3cfab1de2f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDE3fHxnb2xkZWR8ZW58MHx8fHwxNjg5ODE5NTI1&ixlib=rb-1.2.1&q=80&w=1080" alt="Smart TV">
+      <h3>Smart TV</h3>
+      <p>$1,199.00</p>
+      <p class="rating">★★★★★</p>
       <button>Add to Cart</button>
     </div>
 
     <!-- Product 5 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Bluetooth+Speaker" alt="Bluetooth Speaker">
-      <h3>Bluetooth Speaker</h3>
-      <p>$79.00</p>
-      <p class="rating">★★★★★</p>
+      <img src="https://images.unsplash.com/photo-1609870635824-1a07db5b872e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDg1fHxmbHVlbnRpYWluZG9lbmFsb3BlbnN8ZW58MHx8fHwxNjg5ODE3MzEx&ixlib=rb-1.2.1&q=80&w=1080" alt="Fitness Tracker">
+      <h3>Fitness Tracker</h3>
+      <p>$129.00</p>
+      <p class="rating">★★★★☆</p>
       <button>Add to Cart</button>
     </div>
 
     <!-- Product 6 -->
     <div class="product">
-      <img src="https://via.placeholder.com/150?text=Smart+TV" alt="Smart TV">
-      <h3>Smart TV</h3>
-      <p>$499.00</p>
-      <p class="rating">★★★★☆</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- Product 7 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/150?text=Fitness+Tracker" alt="Fitness Tracker">
-      <h3>Fitness Tracker</h3>
-      <p>$129.00</p>
-      <p class="rating">★★★☆☆</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- Product 8 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/150?text=Camera" alt="Camera">
-      <h3>Digital Camera</h3>
-      <p>$399.00</p>
-      <p class="rating">★★★★★</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- Product 9 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/150?text=Headset" alt="Headset">
-      <h3>Gaming Headset</h3>
-      <p>$89.00</p>
-      <p class="rating">★★★★☆</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- Product 10 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/150?text=Portable+Charger" alt="Portable Charger">
+      <img src="https://images.unsplash.com/photo-1580277862534-b8b431998d80?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OXwwfDF8c2VhcmNofDE5fHxwb3J0YWJsZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNjg5ODE3NTM5&ixlib=rb-1.2.1&q=80&w=1080" alt="Portable Charger">
       <h3>Portable Charger</h3>
-      <p>$29.00</p>
+      <p>$69.00</p>
       <p class="rating">★★★★☆</p>
       <button>Add to Cart</button>
     </div>
   </section>
+
+
 
   <!-- Cart Section -->
   <section id="cart">
     <h2>Your Cart</h2>
-    <p>No items in cart.</p>
+    <p>Your cart is currently empty. Add items to your cart to see them here.</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Shop Extreme. All rights reserved.</p>
+    <p>&copy; 2024 Elite Market | All rights reserved</p>
+    <div class="social-media">
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">Twitter</a>
+    </div>
   </footer>
 
-  <!-- Link to external JS file (relative path) -->
+  <!-- Modal for Light/Dark Theme Toggle -->
+  <div id="theme-modal">
+    <div class="modal-content">
+      <h3>Choose Your Theme</h3>
+      <button id="light-theme" class="theme-button">Light Theme</button>
+      <button id="dark-theme" class="theme-button">Dark Theme</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
   <script src="script.js"></script>
 </body>
 </html>
